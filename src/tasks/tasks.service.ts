@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Tasks, TaskStatus } from './tasks.model';
-import { vi as uuid } from 'uuid';
+import { v4 as uuid } from 'uuid';
 @Injectable()
 export class TasksService {
   private tasks: Tasks[] = [];
